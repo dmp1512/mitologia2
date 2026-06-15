@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Dragón Chino</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<button class="boton-menu" onclick="abrirMenu()">
+☰ Menú
+</button>
+
+<div id="menu" class="menu-lateral">
+
+<a href="javascript:void(0)" class="cerrar"
+onclick="cerrarMenu()">
+×
+</a>
+
+<a href="index.html">🏠 Inicio</a>
+<a href="dragon.html">🐉 Dragón Chino</a>
+<a href="kitsune.html">🦊 Kitsune</a>
+<a href="quetzalcoatl.html">🐍 Quetzalcóatl</a>
+<a href="bunyip.html">🌊 Bunyip</a>
+<a href="minotauro.html">🐂 Minotauro</a>
+<a href="fenix.html">🔥 Fénix</a>
+<a href="grifo.html">🦅 Grifo</a>
+<a href="unicornio.html">🦄 Unicornio</a>
+<a href="hipocampo.html">🐠 Hipocampo</a>
+
+</div>
+
+<div class="contenido">
+    <h2>Dragón Chino (China)</h2>
+
+    <img src="dragonchino.webp" alt="Dragón Chino" width="1200">
+
+    <p>
+El dragón chino es una de las criaturas más importantes y veneradas
+de la mitología . A diferencia de los dragones de la tradición
+occidental, que suelen representarse como seres peligrosos o destructivos,
+el dragón chino es normalmente una criatura sabia, poderosa y benevolente.
+
+<br>Se considera un símbolo de prosperidad, poder, sabiduría y buena fortuna.
+Durante miles de años ha estado relacionado con la lluvia, los ríos,
+los mares y el clima, por lo que antiguamente muchos agricultores rezaban
+a los dragones para obtener buenas cosechas.
+
+<br>Su aspecto es una mezcla de varios animales: puede tener cuernos de ciervo,
+ojos de demonio, cuerpo de serpiente, escamas de pez y garras de águila.
+Esta combinación simboliza su naturaleza sobrenatural.
+
+<br>En la antigua China, el dragón también era un símbolo imperial.
+Los emperadores se identificaban con él porque representaba autoridad,
+fuerza y conexión con los cielos.
+
+<br>Hoy sigue siendo un símbolo muy importante en festividades tradicionales
+como el Año Nuevo Chino, donde aparecen famosas danzas del dragón.
+    </p>
+</div>
+
+<script>
+
+function abrirMenu() {
+    document.getElementById("menu").style.width = "350px";
+}
+
+function cerrarMenu() {
+    document.getElementById("menu").style.width = "0";
+}
+
+window.onclick = function(event) {
+
+    const menu = document.getElementById("menu");
+    const boton = document.querySelector(".boton-menu");
+
+    if (
+        menu.style.width === "350px" &&
+        !menu.contains(event.target) &&
+        event.target !== boton
+    ) {
+        cerrarMenu();
+    }
+}
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,114 @@
+/* Fondo general */
+body {
+    margin: 0;
+    background-color: #96FFDF;
+    font-family: Arial, sans-serif;
+    color: #FFE096;
+}
+
+/* Título principal (≈ 90 pt Word) */
+h1 {
+    color: #AB96FF;
+    text-align: center;
+    font-size: 120px;
+}
+
+/* Resto de títulos (≈ 30 pt Word) */
+h2, h3, h4, h5, h6 {
+    color: #AB96FF;
+    text-align: center;
+    font-size: 40px;
+}
+
+/* Párrafos (≈ 30 pt Word) */
+p, ul, ol, li {
+    color: #AB96FF;
+    text-align: center;
+    font-size: 40px;
+}
+
+/* Contenido */
+.contenido {
+    padding: 40px;
+    text-align: center;
+}
+
+/* Botón Menú */
+.boton-menu {
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    background-color: #A97AFA;
+    color: #FFE096;
+    border: 2px solid #7AFAE9;
+    padding: 12px 20px;
+    font-size: 40px; /* ≈ 30 pt */
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* Menú lateral */
+.menu-lateral {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: #198C8A;
+    overflow-x: hidden;
+    transition: 0.4s;
+    padding-top: 60px;
+}
+
+/* Enlaces del menú */
+.menu-lateral a {
+    padding: 15px 25px;
+    text-decoration: none;
+    font-size: 40px; /* ≈ 30 pt */
+    color: #C9FF52;
+    display: block;
+    transition: 0.3s;
+}
+
+/* Hover */
+.menu-lateral a:hover {
+    background-color: rgba(255, 224, 150, 0.2);
+}
+
+/* Botón cerrar */
+.menu-lateral .cerrar {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 40px;
+}
+
+/* Imágenes */
+img {
+    width: 1300px;
+    max-width: 90%;
+    border-radius: 12px;
+    margin-top: 20px;
+}
+.imagen-completa {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+body {
+    margin: 0;
+    background-color: #96FFDF;
+    font-family: Arial, sans-serif;
+    color: #FFE096;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+img {
+    display: block;
+    margin: 0 auto;
+ul, ol {
+    display: inline-block;
+    text-align: left;

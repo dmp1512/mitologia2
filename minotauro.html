@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Minotauro</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<button class="boton-menu" onclick="abrirMenu()">
+☰ Menú
+</button>
+
+<div id="menu" class="menu-lateral">
+
+<a href="javascript:void(0)" class="cerrar"
+onclick="cerrarMenu()">
+×
+</a>
+
+<a href="index.html">🏠 Inicio</a>
+<a href="dragon.html">🐉 Dragón Chino</a>
+<a href="kitsune.html">🦊 Kitsune</a>
+<a href="quetzalcoatl.html">🐍 Quetzalcóatl</a>
+<a href="bunyip.html">🌊 Bunyip</a>
+<a href="minotauro.html">🐂 Minotauro</a>
+<a href="fenix.html">🔥 Fénix</a>
+<a href="grifo.html">🦅 Grifo</a>
+<a href="unicornio.html">🦄 Unicornio</a>
+<a href="hipocampo.html">🐠 Hipocampo</a>
+
+</div>
+<div class="contenido">
+    <h2>Minotauro (Grecia)</h2>
+
+    <img src="minotauro.jpg" alt="Minotauro">
+
+    <p>
+        El Minotauro es una de las criaturas más famosas de la mitología. Se representa con cuerpo de hombre y cabeza de toro.
+
+<br>Según la leyenda, nació como resultado de una maldición divina y fue
+considerado una criatura salvaje, extremadamente fuerte y peligrosa.
+
+<br>El rey Minos ordenó construir un enorme laberinto en la isla de Creta
+para encerrarlo. Este laberinto fue diseñado por el famoso inventor de forma tan compleja que casi nadie podía salir de él.
+
+<br>Durante años, jóvenes eran enviados al laberinto como sacrificio para
+alimentar al Minotauro. Sin embargo, el héroe
+enfrentarse a la bestia.
+
+<br>Gracias a la ayuda de Ariadna, que le dio un hilo para marcar el camino,
+Teseo logró entrar al laberinto, derrotar al Minotauro y regresar con vida.
+
+<br>Esta historia simboliza la lucha entre la razón y la bestialidad, así
+como el valor frente al miedo.
+    </p>
+</div>
+
+<script>
+
+function abrirMenu() {
+    document.getElementById("menu").style.width = "350px";
+}
+
+function cerrarMenu() {
+    document.getElementById("menu").style.width = "0";
+}
+
+window.onclick = function(event) {
+
+    const menu = document.getElementById("menu");
+    const boton = document.querySelector(".boton-menu");
+
+    if (
+        menu.style.width === "350px" &&
+        !menu.contains(event.target) &&
+        event.target !== boton
+    ) {
+        cerrarMenu();
+    }
+}
+
+</script>
+
+</body>
+</html>

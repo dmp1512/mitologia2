@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Bunyip</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<button class="boton-menu" onclick="abrirMenu()">
+☰ Menú
+</button>
+
+<div id="menu" class="menu-lateral">
+
+<a href="javascript:void(0)" class="cerrar"
+onclick="cerrarMenu()">
+×
+</a>
+
+<a href="index.html">🏠 Inicio</a>
+<a href="dragon.html">🐉 Dragón Chino</a>
+<a href="kitsune.html">🦊 Kitsune</a>
+<a href="quetzalcoatl.html">🐍 Quetzalcóatl</a>
+<a href="bunyip.html">🌊 Bunyip</a>
+<a href="minotauro.html">🐂 Minotauro</a>
+<a href="fenix.html">🔥 Fénix</a>
+<a href="grifo.html">🦅 Grifo</a>
+<a href="unicornio.html">🦄 Unicornio</a>
+<a href="hipocampo.html">🐠 Hipocampo</a>
+
+</div>
+
+<div class="contenido">
+    <h2>Bunyip (Australia)</h2>
+
+    <img src="bunyip.webp" alt="Bunyip">
+
+    <p>
+        El Bunyip es una criatura legendaria perteneciente a las tradiciones
+orales de los pueblos aborígenes.
+
+<br>Se dice que habita en pantanos, lagos, ríos y zonas húmedas alejadas
+de la civilización. Aunque no existe una única descripción, muchas
+historias lo presentan como una criatura grande, oscura y aterradora.
+
+<br>Algunas leyendas le atribuyen colmillos afilados, ojos brillantes,
+garras poderosas y un rugido espeluznante que puede escucharse a gran
+distancia. Otras versiones lo describen como una mezcla entre varios
+animales.
+
+<br>El Bunyip suele aparecer en relatos utilizados para advertir a los niños
+sobre los peligros de acercarse a aguas profundas o zonas pantanosas.
+
+<br>Más allá de su aspecto terrorífico, el Bunyip también refleja la conexión
+entre la mitología aborigen y la naturaleza. Muchas historias transmiten
+respeto por el entorno natural y por los peligros que este puede ocultar.
+
+<br>A día de hoy sigue siendo una de las criaturas más misteriosas del
+folclore australiano.
+    </p>
+</div>
+
+<script>
+
+function abrirMenu() {
+    document.getElementById("menu").style.width = "350px";
+}
+
+function cerrarMenu() {
+    document.getElementById("menu").style.width = "0";
+}
+
+window.onclick = function(event) {
+
+    const menu = document.getElementById("menu");
+    const boton = document.querySelector(".boton-menu");
+
+    if (
+        menu.style.width === "350px" &&
+        !menu.contains(event.target) &&
+        event.target !== boton
+    ) {
+        cerrarMenu();
+    }
+}
+
+</script>
+</body>
+</html>

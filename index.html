@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Criaturas Mitológicas</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<button class="boton-menu" onclick="abrirMenu()">
+☰ Menú
+</button>
+
+<div id="menu" class="menu-lateral">
+
+<a href="javascript:void(0)" class="cerrar"
+onclick="cerrarMenu()">
+×
+</a>
+
+<a href="index.html.html">🏠 Inicio</a>
+<a href="dragon.html">🐉 Dragón Chino</a>
+<a href="kitsune.html">🦊 Kitsune</a>
+<a href="quetzalcoatl.html">🐍 Quetzalcóatl</a>
+<a href="bunyip.html">🌊 Bunyip</a>
+<a href="minotauro.html">🐂 Minotauro</a>
+<a href="fenix.html">🔥 Fénix</a>
+<a href="grifo.html">🦅 Grifo</a>
+<a href="unicornio.html">🦄 Unicornio</a>
+<a href="hipocampo.html">🐠 Hipocampo</a>
+
+</div>
+
+<div class="contenido">
+
+<h1>Criaturas Mitológicas del Mundo</h1>
+
+<p>
+Selecciona una criatura desde el menú lateral.
+
+<img src="criaturamitologica2.png" alt="Criatura mitológica" >
+
+<br>Una criatura mitológica es un ser fantástico, legendario o sobrenatural que no existe en la realidad. Estos seres forman parte de los mitos, el folclore y las tradiciones culturales de distintas civilizaciones a lo largo de la historia.
+
+<img src="mitologia.jpg" alt="Criatura mitológica" >
+
+<br>Características Principales:
+<ul style="list-style-type: disc;">
+    <li>Origen cultural: Nacen de la imaginación humana para explicar fenómenos naturales, transmitir valores morales o representar el bien y el mal.</li>
+
+    <li>Naturaleza extraordinaria: Suelen combinar partes de animales reales, humanos o poseer habilidades mágicas.</li>
+
+    <li>Influencia histórica: En la antigüedad, algunas se basaban en avistamientos erróneos de animales reales (como los relatos de marineros) y poblaban los mapas de tierras inexploradas.</li>
+</ul>
+
+</p>
+
+</div>
+
+<script>
+function abrirMenu() {
+    document.getElementById("menu").style.width = "300px";
+}
+
+function cerrarMenu() {
+    document.getElementById("menu").style.width = "0";
+}
+</script>
+
+</body>
+</html>

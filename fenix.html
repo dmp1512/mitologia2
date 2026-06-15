@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Fénix</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<button class="boton-menu" onclick="abrirMenu()">☰ Menú</button>
+
+<div id="menu" class="menu-lateral">
+<a href="javascript:void(0)" class="cerrar" onclick="cerrarMenu()">×</a>
+
+<a href="index.html">🏠 Inicio</a>
+<a href="dragon.html">🐉 Dragón Chino</a>
+<a href="kitsune.html">🦊 Kitsune</a>
+<a href="quetzalcoatl.html">🐍 Quetzalcóatl</a>
+<a href="bunyip.html">🌊 Bunyip</a>
+<a href="minotauro.html">🐂 Minotauro</a>
+<a href="fenix.html">🔥 Fénix</a>
+<a href="grifo.html">🦅 Grifo</a>
+<a href="unicornio.html">🦄 Unicornio</a>
+<a href="hipocampo.html">🐠 Hipocampo</a>
+</div>
+
+<div class="contenido">
+<h2>Fénix</h2>
+<img src="fenix.webp" alt="Fénix">
+<p>
+El fénix es una de las criaturas mitológicas más conocidas del mundo.
+Su origen se encuentra en antiguas culturas como la egipcia y la griega,
+aunque también aparece en otras tradiciones con diferentes nombres.
+
+Esta ave legendaria está estrechamente relacionada con el fuego, el Sol
+y la inmortalidad. Se dice que el fénix vive durante cientos o incluso
+miles de años. Cuando siente que su vida llega a su fin, construye un
+nido con ramas aromáticas y hierbas especiales.
+
+Después, el ave prende fuego a su propio nido y queda consumida por las
+llamas. Sin embargo, en lugar de desaparecer para siempre, de sus cenizas
+surge un nuevo fénix joven y fuerte, comenzando así un nuevo ciclo de vida.
+
+Por esta razón, el fénix simboliza el renacimiento, la esperanza, la
+superación y la capacidad de levantarse después de momentos difíciles.
+Actualmente sigue utilizándose como símbolo de transformación y fuerza.
+</p>
+</div>
+
+<script>
+function abrirMenu(){ document.getElementById("menu").style.width="350px"; }
+function cerrarMenu(){ document.getElementById("menu").style.width="0"; }
+</script>
+
+</body>
+</html>
